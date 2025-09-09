@@ -51,7 +51,12 @@ body {
 }
 
 .container {
-    font-size: 100%;
+    font-size: 100%; /* 16px */
+}
+
+.element, .root-element, .recomendacion {
+    display: inline-block;
+    text-decoration: none;
 }
 
 .element {
@@ -60,13 +65,45 @@ body {
     padding: 1em 2em;
     margin: 1em;
     border-radius: 1em;
-    font-size: 2em;    
+    font-size: 1em; /* 16px */
 }
+
 .root-element {
     background-color: crimson;
     color: #ddd;
     padding: 1rem 2rem;
     margin: 1rem;
     border-radius: 1rem;
-    font-size: 2rem;   
+    font-size: 1rem;  
 }
+
+.recomendacion {
+    background-color: crimson;
+    color: #ddd;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    font-size: 1em;  
+}
+
+/* IDEAL -> todo con em */
+/* ! LO MEJOR */
+/* em: para font-size */
+/* rem: para modelo de caja */
+/* px: tengo tamaño pequeño. Mitad html (16px)  */
+
+.papa, .hijo {
+    color: #ddd;
+}
+
+.papa {
+    background-color: blueviolet;
+    height: 400px;
+    width: 600px;
+}
+
+.hijo {
+    background-color: darkolivegreen;
+    height: 50vh; /* viewport height */
+    width: 50vw; /* viewport width */
+}   
