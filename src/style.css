@@ -1,3 +1,44 @@
-.img-fluid {
-    width: 100%;
+/* Pequeño reset */
+* {
+    margin-block-start: 0; /* margin-left */
+    margin-block-end: 0; /* margin-right */
+    margin-inline-start: 0; /* margin-top */
+    margin-inline-end: 0; /* margin-bottom */
+    margin-block: 0; /* izquierda y derecha */
+    margin-inline: 0; /* arriba y abajo */
+    margin: 0; /* del modelo de caja, los 4 lados */
+    /* margin: 0; */
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* UNIDADES RELATIVAS */
+/* ! EM (em) element */
+/* ! EM es relativa a sus <etiqueta>, <contenedor>, <body>, <html>. A la altura de la M mayuscula  */
+/* Aporte de Nicolaes: es como que toma el tamaño del contenedor padre más cercano (siempre y cuando tenga definido un font size) */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: bisque;
+}
+
+.opinion {
+    /* font-size: 2em; */ /* html -> 16px * 2 -> 32px  */
+    margin: 3em; /* 32px * 3 -> 96px */
+    padding: 1em; /* 32px * 1 = 32px  */
+    border: 1px solid black; 
+    box-shadow: 0.1em 0.1em 0.9em black;
+}
+
+/* ! REM (rem) --- root element */
+/* REM es relativa a la etiqueta root <html> */
+/* ! EM es relativa a sus <etiqueta>, <contenedor>, <body>, <html> */
+h3 {
+    font-size: 2rem; /* 2rem x 16px (html) -> 32px  */
+    padding-inline: 1em; /* 32px * 1 -> 32px */
+    margin-block-end: 1rem; /* html -> 16px -> 16px * 1 -> 16px */
+}
+
