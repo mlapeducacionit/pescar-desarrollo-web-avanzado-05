@@ -17,9 +17,9 @@
 /* ! EM es relativa a sus <etiqueta>, <contenedor>, <body>, <html>. A la altura de la M mayuscula  */
 /* Aporte de Nicolaes: es como que toma el tamaño del contenedor padre más cercano (siempre y cuando tenga definido un font size) */
 
-html {
+/* html {
     font-size: 16px;
-}
+} */
 
 body {
     background-color: bisque;
@@ -42,3 +42,31 @@ h3 {
     margin-block-end: 1rem; /* html -> 16px -> 16px * 1 -> 16px */
 }
 
+html {
+    font-size: 100%;
+}
+
+body {
+    font-size: 100%;
+}
+
+.container {
+    font-size: 100%;
+}
+
+.element {
+    background-color: crimson;
+    color: #ddd;
+    padding: 1em 2em;
+    margin: 1em;
+    border-radius: 1em;
+    font-size: 2em;    
+}
+.root-element {
+    background-color: crimson;
+    color: #ddd;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    font-size: 2rem;   
+}
